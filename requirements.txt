@@ -1,0 +1,32 @@
+Fitness Tracker
+
+1) Tracks lbs & inches lost (Weight)
+2) Tracks exercises done (Exercises)
+
+Research
+Creating a mobile app with Python
+
+
+Requirements for Exercises
+1 Title of Sheets (references to where exercises come from)
+2 Date of Exercise
+2 Entry for Exercise Name, Perceived Exertion, Total Weight, Sets
+	Unlimited rows (exercises) and unlimited columns (sets)
+	Exercise Name is a CharField
+	Total Weight is an IntegerField
+	Sets Entry will be an integer that goes up to 20
+3 Notes section beneath rows
+4 Ability to save these sheets as templates
+
+
+Requirements for Weight
+1 Date of entry
+2 Entry for weight - format = 0.0
+3 Entry for tracked body measurements:
+	Bust, Waist, High Hip, Hip, Left Thigh, Right Thigh, Left Calf, Right Calf, 	Left Bicep, Right Bicep
+4 Display Field that calculates change from previous entry - format = +/- 0.00
+	Gains should display in alert color
+5 Display Graph that shows this change for multiple months (start with 4)
+6 Text reminder the day before the 1st
+7 DB setup
+8 Tests
