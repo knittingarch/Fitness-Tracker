@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Fitness Logger</title>
+    <style>
+        input {
+            margin: 0 10px;
+        }
+        input[type="date"] {
+            width: 115px;
+        }
+        input[type="range"] {
+            width: 60px;
+        }
+        input[type="text"] {
+            width: 250px;
+        }
+        input[type="text"]#workout-day {
+            width: 150px;
+            font-family: Times;
+            font-size: 1em;
+            color: black;
+        }
+        input[type="number"] {
+            width: 35px;
+        }
+        input[type="checkbox"] {
+        }
+        textarea {
+            margin-top: 25px;
+            width: 100%;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fitness Tracker</h1>
+    <form action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Current Weight</legend>
+            <input type="number" />
+        </fieldset>
+        <fieldset>
+            <legend>
+                <tr>
+                    <td><input id="workout-day" type="text" max-width=50px placeholder="Workout Title"/></td>
+                </tr>
+            </legend>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Effort Level</th>
+                    <th class="exercise">Exercise Name</th>
+                    <th>Total Weight</th>
+<!-- These two columns can be added as more sets are done.  Must be added as a pair.-->
+                    <th>Reps</th>
+                    <th>Set Done</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <td><input type="date" /></td>
+                    <td>Easy <input type="range" min="0" max="5" /> Hard</td>
+                    <td><input type="text" class="exercise"/></td>
+                    <td><input type="number" /> lbs</td>
+                    <td><input type="number" /></td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><textarea placeholder="Enter notes here"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        </fieldset>
+        <input type="submit" value="Save Stats" />
+    </form>
+</body>
+</html>
